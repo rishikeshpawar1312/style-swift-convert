@@ -3,25 +3,33 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="container-fluid bg-gray-100 py-2 text-center relative">
-      <img 
-        src="/images/ndma.jpg" 
-        alt="NDMA Logo" 
-        className="absolute h-24 w-24 left-5 top-1/2 transform -translate-y-1/2"
-      />
-      <img 
-        src="/images/image1.jpg" 
-        alt="Emblem of India" 
-        className="h-12 mx-2 inline-block"
-      />
-      <span className="text-xl font-semibold text-gray-800">
-        भारत सरकार | Government of India
-      </span>
-      <img 
-        src="/images/azadi.jpg" 
-        alt="Home Ministry Logo" 
-        className="absolute h-12 right-5 top-1/2 transform -translate-y-1/2"
-      />
+    <div className="bg-gradient-to-r from-blue-600 to-blue-800 py-4 shadow-lg">
+      <div className="container mx-auto px-4 flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <img 
+            src="/images/ndma.jpg" 
+            alt="NDMA Logo" 
+            className="h-16 w-16 rounded-full border-2 border-white/20"
+          />
+          <div className="text-white">
+            <h1 className="text-xl font-bold">भारत सरकार | Government of India</h1>
+            <p className="text-blue-100 text-sm">National Disaster Management Authority</p>
+          </div>
+        </div>
+        
+        <div className="flex items-center space-x-4">
+          <img 
+            src="/images/image1.jpg" 
+            alt="Emblem of India" 
+            className="h-12 w-auto"
+          />
+          <img 
+            src="/images/azadi.jpg" 
+            alt="Home Ministry Logo" 
+            className="h-12 w-auto"
+          />
+        </div>
+      </div>
     </div>
   );
 };
